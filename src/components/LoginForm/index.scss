@@ -1,0 +1,78 @@
+.loginFormWrap .loginBtn {
+    padding: 10px 50px;
+    border: 2px solid #4FA1D9;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 11px;
+    color: #4FA1D9;
+    transition: all .2s;
+}
+.loginFormWrap .bottom {
+    display: flex;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginFormWrap .registerBtn {
+    color: #D3D7F7;
+}
+.loginFormWrap .registerBtn:hover {
+    color: #4FA1D9;
+    cursor: pointer;
+}
+.loginFormWrap .loginBtn:hover {
+    color: white;
+    background: #4FA1D9;
+    cursor: pointer;
+}
+.loginFormWrap .title {
+    height: 60px;
+    color:#D3D7F7;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.loginFormWrap .footer {
+    position: absolute;
+    bottom: 20px;
+    left: 35px;
+    width: 250px;
+    color: #D3D7F7;
+    font-size: 10px;
+}
+
+.loginFormWrap :global(.ant-input-group-addon .iconfont).focus {
+	width: 20px;
+	opacity: 1;
+}
+
+/*覆盖antd的默认样式*/
+.loginFormWrap :global(.ant-input-group .ant-input) {
+    color: #61BFFF;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+.loginFormWrap :global(.ant-input-group-addon) {
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: #fff;
+    opacity: 0.8;
+}
+.loginFormWrap :global(.ant-input-group-addon .iconfont) {
+    display: inline-block;
+    width: 30px;
+    transition: all .3s;
+    opacity: 0.6;
+}
+.loginFormWrap :global(.ant-form-item) {
+    margin-bottom: 10px;
+}
+.loginFormWrap :global(.ant-form-explain) {
+    position: absolute;
+    z-index: 99;
+    left: 110%;
+    top: 0;
+    height: 41px;
+}

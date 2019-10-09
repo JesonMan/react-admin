@@ -1,0 +1,20 @@
+# 依赖
+/node_modules
+
+# 编译之后产生的目录
+dist/
+dll/
+
+# Eclipse项目配置文件及其目录
+.project
+.classpath
+.settings/
+MAINFEST.MF
+deploy/
+
+# IDEA项目配置文件及其目录
+*.iml
+.idea/
+
+# mac 自动生成的文件
+*.DS_Store
