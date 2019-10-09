@@ -21,3 +21,10 @@ npm run dev
 ```shell
 npm run build
 ```
+
+# 相关优化
+
+1. 使用DllPlugin和DllReferencePlugin插件，dll化常用的第三方模块，提高webpack构建速度，也有利于客户端缓存。
+2. 使用HappyPack插件开启多进程loader转换，提高webpack构建速度
+3. 使用MiniCssExtractPlugin插件抽离css到单独的css文件，并使用OptimizeCssAssetsPlugin插件对css进行压缩。
+4. 使用react-loadable实现代码分割，从而实现按需加载。
