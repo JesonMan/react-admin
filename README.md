@@ -34,8 +34,8 @@ npm run build
 
 # 相关页面
 
-### 首页
-![首页](https://jesonman.github.io/images/react-admin/home.png)
-
 ### 登录
 ![登录](https://jesonman.github.io/images/react-admin/login.png)
+
+### 首页
+![首页](https://jesonman.github.io/images/react-admin/home.png)
