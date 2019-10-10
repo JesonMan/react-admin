@@ -31,3 +31,12 @@ npm run build
 3. 使用autoprefixer实现自动补全css浏览器兼容前缀。
 4. 使用MiniCssExtractPlugin插件抽离css到单独的css文件，并使用OptimizeCssAssetsPlugin插件对css进行压缩。
 5. 使用react-loadable实现代码分割，从而实现按需加载。
+
+# 相关页面
+
+### 登录页
+
+![登录页](https://jesonman.github.io/images/react-admin/login.png)
+
+### 首页
+![首页](https://jesonman.github.io/images/react-admin/home.png)
