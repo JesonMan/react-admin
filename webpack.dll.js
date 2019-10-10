@@ -5,7 +5,7 @@ module.exports = {
     mode: 'production',
     // 应用入口
     entry: {
-        vendor: ['react', 'react-dom', 'react-redux', 'redux', 'react-router-dom', '@loadable/component']
+        vendor: ['react', 'react-dom', 'react-redux', 'redux', 'react-router-dom', 'react-loadable']
     },
     // 输出目录
     output: {
