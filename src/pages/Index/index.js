@@ -43,7 +43,7 @@ class Index extends React.Component {
 						<Footer style={{ textAlign: 'center', paddingTop: '0' }}>
 							React-Admin ©2019 Created by Jeson
 							{' '}
-							<a target="_blank" rel="noopener noreferrer" href="/">github地址</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://github.com/JesonMan/react-admin">github地址</a>
 						</Footer>
 					</Layout>
 				</Layout>

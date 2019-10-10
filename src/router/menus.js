@@ -1,12 +1,13 @@
 import React from 'react';
-import loadable from '@loadable/component';
+import Loadable from 'react-loadable';
 import { Switch, Redirect } from 'react-router-dom';
 import PrivateRoute from '@/components/PrivateRoute';
 import Loading from '@/components/Loading';
 
 function myLoadable(fn) {
-	return loadable(fn, {
-		fallback: Loading
+	return Loadable({
+		loader: fn,
+		loading: Loading,
 	});
 }
 
