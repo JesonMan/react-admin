@@ -24,9 +24,9 @@ class MyEcharts extends Component {
 		}
 	}
 
-	componentDidUpdate() {
+	shouldComponentUpdate(nextProps) {
 		// 数据更新时，同步更新echarts图数据
-		this.myChart.setOption(this.props.option);
+		this.myChart.setOption(nextProps.option);
 		// 不需要再次render，所以返回 false 即可
 		return false;
 	}
