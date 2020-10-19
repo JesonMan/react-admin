@@ -2,7 +2,7 @@
 
 react + redux + react-router + sass + antd + eslint + webpack 后台管理系统Demo
 
-项目预览地址 [https://jesonman.github.io/react-admin-demo/](https://jesonman.github.io/react-admin-demo/)
+项目预览地址 [https://jesonman.github.io/react-admin-demo/](https://jesonman.github.io/react-admin-demo/)（预览地址无法访问的话，把DNS改成 114.114.114.114 即可访问）
 
 # 使用方法
 
