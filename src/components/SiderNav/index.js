@@ -54,7 +54,7 @@ class SiderNav extends React.Component {
 		}
 	}
 
-	componentWillReceiveProps(nextProps) {
+	UNSAFE_componentWillReceiveProps(nextProps) {
 		// 当点击面包屑导航时，侧边栏要同步响应
 		let pathname = nextProps.location.pathname;
 		if (this.props.location.pathname !== pathname) {
@@ -128,23 +128,21 @@ class SiderNav extends React.Component {
 					<img width="36" alt="logo" src={logo} />
 					{!this.props.collapsed && <h1 style={styles.h1}>后台管理系统</h1>}
 				</div>
-				{
-					<Menu
-						{...defaultProps}
-						onOpenChange={this.onOpenChange}
-						onClick={({ key }) => this.setState({ selectedKeys: [key] })}
-						selectedKeys={selectedKeys}
-						theme="dark"
-						mode="inline"
-					>
-						{
-							menus.map((item) => {
-								return item.subs && item.subs.length > 0
-									? this.renderSubMenu(item) : this.renderMenuItem(item);
-							})
-						}
-					</Menu>
-				}
+				<Menu
+					{...defaultProps}
+					onOpenChange={this.onOpenChange}
+					onClick={({ key }) => this.setState({ selectedKeys: [key] })}
+					selectedKeys={selectedKeys}
+					theme="dark"
+					mode="inline"
+				>
+					{
+						menus.map((item) => {
+							return item.subs && item.subs.length > 0
+								? this.renderSubMenu(item) : this.renderMenuItem(item);
+						})
+					}
+				</Menu>
 			</div>
 		);
 	}

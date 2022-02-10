@@ -6,7 +6,6 @@ import MenuRoutes from '@/router/menus';
 
 const { Sider, Header, Content, Footer } = Layout;
 
-
 class Index extends React.Component {
 	constructor(props) {
 		super(props);

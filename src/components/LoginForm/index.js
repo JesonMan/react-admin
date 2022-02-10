@@ -93,7 +93,6 @@ class LoginForm extends React.Component {
 					return;
 				}
 
-
 				this.props.login(values.username);
 
 				let { from } = this.props.location.state || { from: { pathname: '/' } };

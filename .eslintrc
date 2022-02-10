@@ -2,7 +2,16 @@
     "extends": "airbnb",
     "parser": "babel-eslint",
     "env": {
-        "browser": true,
+        "browser": true
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    ["@", "./src"] //别名路径
+                ]
+            }
+        }
     },
     "rules": {
         "indent": [2, "tab", { "SwitchCase": 1 }], 
@@ -37,6 +46,8 @@
         "no-restricted-syntax": 0,
         "no-param-reassign": 0,
         "no-shadow": 0,
-        "jsx-a11y/anchor-is-valid": 0
+        "jsx-a11y/anchor-is-valid": 0,
+        "linebreak-style": 0,
+        "camelcase": 0
     }
 }

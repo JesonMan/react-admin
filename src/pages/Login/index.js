@@ -1,10 +1,10 @@
 import React from 'react';
 import { notification } from 'antd';
 import { connect } from 'react-redux';
-import style from './index.scss';
 // import 'animate.css';
 import LoginForm from '@/components/LoginForm';
 import RegisterForm from '@/components/RegisterForm';
+import style from './index.scss';
 
 class Login extends React.Component {
 	constructor(props) {
